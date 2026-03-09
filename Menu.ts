@@ -99,12 +99,12 @@ export function main() {
 
 }
 
-/* Função com os dados da pessoa desenvolvedora */
+
 function sobre(): void {
     console.log("\n*****************************************************");
     console.log("Projeto Desenvolvido por: Kaio Henrique de Morais Felix ");
-    console.log("Generation Brasil - generation@generation.org");
-    console.log("github.com/conteudoGeneration");
+    console.log("Generation Brasil - kaiof@genstudents.org");
+    console.log("https://github.com/KaioMorais41/conta_bancaria");
     console.log("*****************************************************");
 }
 
