@@ -1,9 +1,18 @@
 import readlinesync = require("readline-sync");
 import { colors } from './src/util/Colors';
+import { Conta } from './src/model/Conta';
 
 export function main() {
 
     let opcao: number;
+
+    const conta: Conta = new Conta(1, 123, 1, "Adriana", 10000);
+    conta.visualizar();
+    conta.sacar(10500);
+    conta.visualizar();
+    conta.depositar(5000);
+    conta.visualizar();
+
 
     while (true) {
 
@@ -101,11 +110,11 @@ export function main() {
 
 
 function sobre(): void {
-    console.log("\n*****************************************************");
-    console.log("Projeto Desenvolvido por: Kaio Henrique de Morais Felix ");
-    console.log("Generation Brasil - kaiof@genstudents.org");
-    console.log("https://github.com/KaioMorais41/conta_bancaria");
-    console.log("*****************************************************");
+    console.log(colors.fg.gray, "\n*****************************************************");
+    console.log(colors.fg.gray, "Projeto Desenvolvido por: Kaio Henrique de Morais Felix ");
+    console.log(colors.fg.gray, "Generation Brasil - kaiof@genstudents.org");
+    console.log(colors.fg.gray, "https://github.com/KaioMorais41/conta_bancaria");
+    console.log(colors.fg.gray, "*****************************************************");
 }
 
 function keyPress(): void {
