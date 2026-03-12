@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     private _numero!: number;
     private _agencia!: number;
@@ -56,7 +56,7 @@ export class Conta {
 
     public sacar(valor: number): boolean {
         if(this.saldo < valor){
-            console.log("Saldo insuficiente!");
+            console.log("\nSaldo insuficiente!");
             return false;
         }
 
