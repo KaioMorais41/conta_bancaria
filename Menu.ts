@@ -200,8 +200,8 @@ export function main() {
 }
 function sobre(): void {
     console.log("\n*****************************************************");
-    console.log("Projeto Desenvolvido por: Beatriz Braga Silva");
-    console.log("Generation Brasil - generation@generation.org");
+    console.log("Projeto Desenvolvido por: Kaio Henrique de Morais Felix");
+    console.log("Generation Brasil - kaiof@genstudents.org");
     console.log("github.com/conteudoGeneration");
     console.log("*****************************************************");
 }
